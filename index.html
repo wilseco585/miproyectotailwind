@@ -39,8 +39,9 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo/Nombre de la empresa -->
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-amber-100">Tallados en Madera</span>
+                    <span class="text-2xl font-bold text-amber-100">Tallados de Madera</span>
                 </div>
+                
                 <!-- Menú de navegación (visible solo en pantallas medianas y grandes) -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -49,6 +50,25 @@
                         <a href="#historia" class="text-amber-100 hover:text-white px-3 py-2 rounded-md">Historia</a>
                         <a href="#contacto" class="text-amber-100 hover:text-white px-3 py-2 rounded-md">Ubicación</a>
                     </div>
+                </div>
+
+                <!-- Botón de menú móvil -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-amber-100 hover:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Menú móvil (oculto por defecto) -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#inicio" class="text-amber-100 hover:text-white block px-3 py-2 rounded-md">Inicio</a>
+                    <a href="#productos" class="text-amber-100 hover:text-white block px-3 py-2 rounded-md">Productos</a>
+                    <a href="#historia" class="text-amber-100 hover:text-white block px-3 py-2 rounded-md">Historia</a>
+                    <a href="#contacto" class="text-amber-100 hover:text-white block px-3 py-2 rounded-md">Ubicación</a>
                 </div>
             </div>
         </div>
@@ -294,7 +314,27 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+                // Cerrar el menú móvil si está abierto
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
             });
+        });
+
+        // Funcionalidad del menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cerrar el menú móvil cuando se hace clic fuera de él
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
         });
 
         // Configuración del carrusel de miniaturas
@@ -357,3 +397,4 @@
     </script>
 </body>
 </html>
+
