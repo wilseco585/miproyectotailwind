@@ -4,7 +4,7 @@
     <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tallados por Madera - Trinidad, Beni</title>
+    <title>TALLADOS DE MADERA MOXOS- Trinidad, Beni</title>
 
     <!-- Importación de CSS generado por Tailwind CLI -->
     <link href="src/output.css" rel="stylesheet">
@@ -22,7 +22,7 @@
             <div class="flex items-center justify-between h-16">
                 <!-- Logo/Nombre de la empresa -->
                 <div class="flex items-center">
-                    <span class="text-2xl font-bold text-amber-100">Tallados de Madera</span>
+                    <span class="text-2xl font-bold text-amber-100">TALLADOS DE MADERA-MOXOS </span>
                 </div>
                 
                 <!-- Menú de navegación (visible solo en pantallas medianas y grandes) -->
@@ -58,15 +58,27 @@
     </nav>
 
     <!-- Sección Hero - Primera vista que ve el usuario -->
-    <section id="inicio" class="pt-24 pb-12 md:pt-32 md:pb-20">
+    <section id="inicio" class="pt-20 pb-10 md:pt-28 md:pb-16 border-b-2 border-ochoo/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <!-- Título principal y descripción del negocio -->
-                <h1 class="text-4xl md:text-6xl font-bold text-ochoo mb-6">Tallados por Madera</h1>
+                <h1 class="text-4xl md:text-6xl font-bold text-ochoo mb-6">Tallados de Madera Moxos</h1>
                 <p class="text-xl text-tierra mb-4">30 años dando vida a la madera beniana</p>
                 <p class="text-lg text-beni mb-8">Artesanías tradicionales hechas a mano</p>
+
+                <!-- Nuevos detalles destacados -->
+                <div class="mt-4 text-lg text-ochoo/90">
+                    <p class="mb-2"> Elaboradas con <span class="font-semibold text-ochoo">madera de Ochoo</span>, tesoro del Beni.</p>
+                    <p class="mb-2">Piezas únicas que reflejan la <span class="font-semibold text-ochoo">rica cultura beniana</span>.</p>
+                    <p>Cada detalle <span class="font-semibold text-ochoo">tallado con pasión y esmero</span> a mano.</p>
+                </div>
+
+                <div class="mb-8"></div>
+
                 <!-- Botón de llamada a la acción -->
-                <a href="#productos" class="bg-ochoo text-white px-8 py-4 rounded-lg hover:bg-tierra transition duration-300">Ver nuestros productos</a>
+                <a href="#productos" class="bg-ochoo text-white px-8 py-4 rounded-lg hover:bg-tierra transition duration-300">
+                    Ver nuestros productos
+                </a>
             </div>
         </div>
     </section>
@@ -86,17 +98,17 @@
                         <div class="swiper-slide flex items-center justify-center bg-gradient-to-b from-gray-50 to-white p-4">
                             <img src="imagenes/6c21fba1-8af9-4aaf-9ed5-486f7c6ef2f3.jpg" 
                                  alt="Tallados en madera de ochoo" 
-                                 class="w-full h-full object-contain rounded-lg transform transition-transform duration-500 hover:scale-105">
+                                 class="w-full h-full object-cover rounded-lg transform transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="swiper-slide flex items-center justify-center bg-gradient-to-b from-gray-50 to-white p-4">
                             <img src="imagenes/aaafdb97-23ee-4db2-a3e0-66f3bd8460f7.jpg" 
                                  alt="Exhibición de tallados" 
-                                 class="w-full h-full object-contain rounded-lg transform transition-transform duration-500 hover:scale-105">
+                                 class="w-full h-full object-cover rounded-lg transform transition-transform duration-500 hover:scale-105">
                         </div>
                         <div class="swiper-slide flex items-center justify-center bg-gradient-to-b from-gray-50 to-white p-4">
                             <img src="imagenes/b5dafccf-a384-45e6-a5d6-bbf1eba21ba9.jpg" 
                                  alt="Detalles de tallados" 
-                                 class="w-full h-full object-contain rounded-lg transform transition-transform duration-500 hover:scale-105">
+                                 class="w-full h-full object-cover rounded-lg transform transition-transform duration-500 hover:scale-105">
                         </div>
                     </div>
                     <!-- Botones de navegación del carrusel con estilo mejorado -->
@@ -140,20 +152,20 @@
                 <!-- Tarjeta del producto principal -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                     <!-- Contenedor de la imagen con efecto hover -->
-                    <div class="relative h-[400px] md:h-[500px] bg-gray-50 flex items-center justify-center group">
+                    <div class="relative h-[400px] md:h-[500px] flex items-center justify-center group">
                         <img 
                             src="imagenes/1.jpg" 
                             alt="Porta vinos artesanal" 
-                            class="w-full h-full object-contain transform transition-transform duration-300 group-hover:scale-105"
+                            class="w-full h-full object-cover transform transition-transform duration-300 group-hover:scale-105"
                         >
                     </div>
                     <!-- Información del producto -->
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-ochoo mb-2">Porta Vinos Artesanal</h3>
-                        <p class="text-tierra mb-4">Elegante porta vinos tallado en madera de ochoo, perfecto para decorar tu hogar o regalar en ocasiones especiales. Cada pieza es única y trabajada a mano con dedicación.</p>
-                        <div class="flex justify-between items-center">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-ochoo mb-1">Porta Vinos Artesanal</h3>
+                        <p class="text-tierra mb-2">Elegante porta vinos tallado en madera de ochoo, perfecto para decorar tu hogar o regalar en ocasiones especiales. Cada pieza es única y trabajada a mano con dedicación.</p>
+                        <div class="mt-4 flex flex-col sm:flex-row items-center justify-center sm:space-x-4">
                             <span class="text-lg font-bold text-verde-pampa">Bs. 70</span>
-                            <p class="text-sm text-gray-600">Producto hecho 100% a mano</p>
+                            <p class="text-sm text-gray-600 mt-1 sm:mt-0">Producto hecho 100% a mano</p>
                         </div>
                     </div>
                 </div>
@@ -234,17 +246,17 @@
     <!-- Sección de Contacto WhatsApp -->
     <section id="contacto" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-ochoo text-center mb-12">Contáctanos</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-ochoo text-center mb-10">Contáctanos</h2>
             <div class="max-w-3xl mx-auto">
                 <div class="bg-white rounded-lg shadow-lg p-8">
-                    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                         <!-- Información de contacto y botón de WhatsApp -->
                         <div class="text-center md:text-left space-y-4 flex-1">
                             <h3 class="text-xl font-bold text-ochoo mb-4">Escríbenos por WhatsApp</h3>
                             <p class="text-tierra text-lg mb-4">
                                 <span class="font-semibold">📱 +591 67287760</span>
                             </p>
-                            <p class="text-tierra mb-6">Responderemos tus consultas y pedidos lo más pronto posible</p>
+                            <p class="text-tierra mb-4">Responderemos tus consultas y pedidos lo más pronto posible</p>
                             <!-- Botón de WhatsApp con icono -->
                             <a 
                                 href="https://wa.me/59167287760" 
@@ -260,11 +272,13 @@
                         <!-- Código QR para WhatsApp -->
                         <div class="flex flex-col items-center space-y-4">
                             <p class="text-tierra font-medium">Escanea para chatear</p>
-                            <img 
-                                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/59167287760" 
-                                alt="Código QR para WhatsApp" 
-                                class="w-48 h-48 rounded-lg shadow-md"
-                            >
+                            <div class="p-2 bg-gray-50 rounded-xl shadow-md">
+                                <img 
+                                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wa.me/59167287760" 
+                                    alt="Código QR para WhatsApp" 
+                                    class="w-56 h-56 rounded-lg"
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
